@@ -1,0 +1,22 @@
+---
+name: Config-Tiny-Ordered
+version: 1.00
+author:
+  - 'Ron Savage <ron@savage.net.au>'
+abstract: Read/Write ordered .ini style files with as little code as possible
+license: artistic
+resources:
+  license: http://opensource.org/licenses/artistic-license.php
+requires:
+  Config::Tiny: 2.12
+build_requires:
+  Test::More: 0.47
+  Test::Pod: 0
+provides:
+  Config::Tiny::Ordered:
+    file: lib/Config/Tiny/Ordered.pm
+    version: 1.00
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

@@ -1,0 +1,6 @@
+Revision history for Perl extension Config::Tiny::Ordered
+
+1.00 Thu 23 Apr 2009
+	 - Convert from Config::Tiny V 2.12 to preserve the order of keys within sections.
+	 - Add Build.PL to the distro.
+	 - Add MANIFEST.SKIP to the distro.
