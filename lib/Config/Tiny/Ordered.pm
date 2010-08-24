@@ -5,11 +5,12 @@ package Config::Tiny::Ordered;
 use base 'Config::Tiny';
 use strict;
 
+our $VERSION = '1.02';
+
 BEGIN
 {
 	require 5.004;
 
-	$Config::Tiny::Ordered::VERSION = '1.00';
 	$Config::Tiny::Ordered::errstr  = '';
 }
 
@@ -93,7 +94,7 @@ sub write_string
 			$contents .= "$$property{'key'}=$$property{'value'}\n";
 		}
 	}
-	
+
 	return $contents;
 
 } # End of write_string.
@@ -200,7 +201,7 @@ The constructor C<new> creates and returns an empty C<Config::Tiny::Ordered> obj
 =head2 read $filename
 
 The C<read> constructor reads a config file, and returns a new
-C<Config::Tiny::Ordered> object containing the properties in the file. 
+C<Config::Tiny::Ordered> object containing the properties in the file.
 
 Returns the object on success, or C<undef> on error.
 
@@ -259,8 +260,7 @@ L<Config::Tiny>, L<Config::IniFiles>, L<Config::Simple>, L<Config::General>, L<a
 
 	Copyright 2002 - 2008 Adam Kennedy.
 
-	Copyright (c) 2009,  Ron Savage. All rights reserved.
-
+	Australian copyright (c) 2009,  Ron Savage.
 	All Programs of Ron's are 'OSI Certified Open Source Software';
 	you can redistribute them and/or modify them under the terms of
 	the Artistic or the GPL licences, copies of which is available at:
